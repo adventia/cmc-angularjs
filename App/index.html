@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html ng-app="cmc">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- build:css css/tm.min.css -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!-- endbuild -->
+
+		<title>CMC Markets Test App</title>
+		<script src="scripts/010.libs/modernizr.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div ng-view id="main"></div>
+		</div>
+
+		<!-- build:js js/tm.min.js -->
+		<script src="scripts/010.libs/030.jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="scripts/010.libs/angular.min.js"></script>
+		<script src="scripts/010.libs/angular-route.js"></script>
+		<script src="scripts/010.libs/angular-cookies.js"></script>
+		<script src="scripts/010.libs/angular-local-storage.min.js"></script>
+    	<script src="scripts/010.libs/angular-idle.min.js"></script>
+    	<script src="scripts/010.libs/moment.min.js"></script>
+    	<script src="scripts/app.js"></script>
+		<script src="scripts/directives/common.directives.js"></script>
+	    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	    <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+		<script src="scripts/filters/common.filters.js"></script>
+		<script src="scripts/factories/common.factories.js"></script>
+		<script src="scripts/controllers/common.controllers.js"></script>
+
+		<script src="scripts/controllers/landing.js"></script>
+		<script src="scripts/controllers/cart.js"></script>
+		<script src="scripts/controllers/thanks.js"></script>
+		<script src="scripts/directives/siteheader.directive.js"></script>
+
+		<!-- endbuild -->
+
+	</body>
+</html>

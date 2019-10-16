@@ -1,0 +1,17 @@
+﻿Things we need to do:
+
+1.  Load dependencies
+2.  Clean task (delete PROD and TEMP directory basically)
+3.  Compile includes task
+4.  Versioning task
+5.  Compile LESS task
+6.  Vendor prefix task? Not sure it's needed
+7.  Merge all JS files in core libraries into one js and push to prod/js
+8.  Copy all non-core libraries into a folder on prod/js and reference accordingly
+9.  Copy all images to prod/img
+10. connect
+11. watch
+12. bump
+
+
+So, the watch task 

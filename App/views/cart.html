@@ -1,0 +1,40 @@
+<site-header></site-header>
+<h2>Shopping Cart</h2>
+<p><a href ng-click="NavigateProducts()">&lt; Back to products</a></p>
+<div class="cartitems" ng-if="cart.items.length > 0">
+	<div class="row"  ng-repeat="item in cart.items">
+
+		<div class="cartitem well col-sm-4">
+			<h3>{{item.productname}}</h3>
+			<h4>{{item.price | currency }}</h4>
+			<button ng-click="RemoveItem($index)" class="btn btn-primary">Remove</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2 col-xs-6">
+			<h4>Subtotal:</h4>
+		</div>
+		<div class="col-sm-2 col-xs-6 text-right">
+			<h4>{{carttotal | currency}}</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2 col-xs-6">
+			<h5>Shipping:</h5>
+		</div>
+		<div class="col-sm-2 col-xs-6 text-right">
+			<h5> {{shippingtotal | currency}}</h5>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2 col-xs-6">
+			<h3>Total:</h3>
+		</div>
+		<div class="col-sm-2 col-xs-6 text-right">
+			<h3>{{total | currency}}</h3>
+		</div>
+	</div>
+	<button ng-click="PlaceOrder()" class="btn btn-primary">Place order</button>
+</div>
+
+<p ng-if="cart.items.length === 0">There are no items in your cart.</p>
